@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <link rel="stylesheet" href="styles.css">
+
+
+    <title>Sepet</title>
+</head>
+<body>
+
+
+<!-- Kayan Yazı -->
+<div class="kayan-yazi-container">
+    <div class="kayan-yazi">
+    🚨 Şık Butik'te Yeni Sezon! Ücretsiz Kargo & Kapıda Ödeme Fırsatı! 🎁
+    </div>
+</div>
+
+<!--Butik Navbar-->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top" style="margin-top: 40px;">
+    <div class="container-fluid justify-content-between px-4">
+      <!-- Logo (Sola yaslı ama boşluklu) -->
+      <div class="d-flex align-items-center ps-lg-3" style="min-width: 150px;">
+        <img src="images/logo.jpg" width="110">
+      </div>
+  
+      <!-- Menü (Ortalanmış) -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav">
+            <!-- KOLEKSİYON -->
+            <li class="nav-item"><a class="nav-link" href="index.html">KOLEKSİYON</a></li>
+    
+            <!-- TAKIM -->
+            <li class="nav-item dropdown mega-menu position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">TAKIM <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu mega-dropdown w-100 mt-0 py-4 px-5">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h6>ETEKLİ TAKIM</h6>
+                            <img src="images/takim1.webp" alt="Takım 1" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6>PANTALONLU TAKIM</h6>
+                            <img src="images/takim2.webp" alt="Takım 2" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <h6>TRİKO TAKIM</h6>
+                          <img src="images/takim3.webp" alt="Takım 2" class="img-fluid rounded">
+                      </div>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- ELBİSE -->
+            <li class="nav-item"><a class="nav-link" href="#">ELBİSE</a></li>
+    
+            <!-- ALT GİYİM -->
+            <li class="nav-item dropdown mega-menu position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ALT GİYİM <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu mega-dropdown w-100 mt-0 py-4 px-5">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h6>ETEK</h6>
+                            <img src="images/menufoto1.webp" alt="Etek" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6>PANTOLON</h6>
+                            <img src="images/menufoto2.webp" alt="Pantolon" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- ÜST GİYİM -->
+            <li class="nav-item dropdown mega-menu position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ÜST GİYİM <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu mega-dropdown w-100 mt-0 py-4 px-5">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h6>GÖMLEK</h6>
+                            <img src="images/üst1.webp" alt="Gömlek" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6>KAZAK</h6>
+                            <img src="images/üst2.webp" alt="Kazak" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <h6>T-SHIRT</h6>
+                          <img src="images/üst3.webp" alt="T-Shirt" class="img-fluid rounded">
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <h6>TUNİK</h6>
+                        <img src="images/üst4.webp" alt="Tunik" class="img-fluid rounded">
+                    </div>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- DIŞ GİYİM -->
+            <li class="nav-item dropdown mega-menu position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">DIŞ GİYİM <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu mega-dropdown w-100 mt-0 py-4 px-5">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h6>CEKET</h6>
+                            <img src="images/dis1.webp" alt="Ceket" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6>HIRKA</h6>
+                            <img src="images/dis2.webp" alt="Hırka" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <h6>KABAN</h6>
+                          <img src="images/dis3.webp" alt="Kaban" class="img-fluid rounded">
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <h6>YELEK</h6>
+                        <img src="images/dis4.webp" alt="Yelek" class="img-fluid rounded">
+                    </div>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- IMANNOOR COLLECTION -->
+            <li class="nav-item dropdown mega-menu position-static">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">IMANNOOR COLLECTION <i class="fas fa-caret-down"></i></a>
+              <div class="dropdown-menu mega-dropdown w-100 mt-0 py-4 px-5">
+                  <div class="row">
+                      <div class="col-md-3 text-center">
+                          <h6>ŞAL</h6>
+                          <img src="images/sal.webp" alt="Sal" class="img-fluid rounded">
+                      </div>
+                    <div class="col-md-3 text-center">
+                      <h6>EŞARP</h6>
+                      <img src="images/esarp.webp" alt="Esarp" class="img-fluid rounded">
+                  </div>
+                  </div>
+              </div>
+          </li>
+    
+            <!-- İNDİRİM ÜRÜNLERİ -->
+            <li class="nav-item"><a class="nav-link" href="#">İNDİRİM ÜRÜNLERİ</a></li>
+        </ul>
+    </div>
+
+      <!-- Sağ ikonlar (Sağa yaslı ama boşluklu) -->
+      <div class="d-flex align-items-center gap-3 pe-lg-3" style="min-width: 150px; justify-content: flex-end;">
+        <a href="#" class="text-dark"><i class="bi bi-search"></i></a>
+        <a href="#" class="text-dark icon-badge"><i class="bi bi-bag"></i></a>
+        <a href="#" class="text-dark icon-badge"><i class="bi bi-heart"></i></a>
+        <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
+      </div>
+    </div>
+</nav>
+
+<div class="container mt-5 pt-5">
+    <h1 class="text-center mb-4 my-5" style="font-family: 'Open Sans', sans-serif; font-weight: 700;">🛍️ Sepetiniz</h1>
+    <div class="row my-5">
+        <!-- Sepet Ürünleri -->
+        <div class="col-lg-8">
+            <div id="cart-items" class="list-group">
+                <!-- Ürünler buraya eklenecek -->
+            </div>
+            <div id="empty-cart-message" class="alert alert-info mt-3" style="display: none;">
+                Sepetiniz şu an boş.
+            </div>
+        </div>
+        <!-- Sepet Özeti -->
+        <div class="col-lg-4">
+            <div class="card-h">
+                <div class="card-body">
+                    <h5 class="card-title">Sepet Özeti</h5>
+                    <span style="opacity: 0.5;">Kargo sonraki aşamada hesaplanacaktır</span>
+                    <hr>
+                    <p class="card-text">Ürünler Toplamı : <span id="total-price"><b>0.00 TL</b></span></p>
+
+                    <!--İndirim Kuponu-->
+                    <div class="mt-3">
+                        <input type="text" id="kupon-kodu" placeholder="Kupon kodu">
+                        <button class="btn btn-dark w-100 mt-2" id="indirim-uygula">İndirim Uygula</button>
+                    </div>
+                    <hr>
+                    <p class="card-text">İndirimli Fiyat: <span id="indirimli-fiyat"><b>0.00 TL</b></span></p>
+                    <button class="btn btn-dark w-100" id="confirm-cart">SEPETİ ONAYLA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<footer class="footer">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h5 class="footer-title">Şık Butik</h5>
+                <p>Türkiye'nin önde gelen moda butiklerinden biri olarak, sizlere en kaliteli ve şık ürünleri sunuyoruz.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h5 class="footer-title">Kategoriler</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#"><i class="fa-solid fa-shirt"></i> Takım</a></li>
+                    <li><a href="#"><i class="fa-solid fa-vest-patches"></i> Elbise</a></li>
+                    <li><a href="#"><i class="fa-solid fa-socks"></i> Alt Giyim</a></li>
+                    <li><a href="#"><i class="fa-solid fa-tshirt"></i> Üst Giyim</a></li>
+                    <li><a href="#"><i class="fa-solid fa-mitten"></i> Dış Giyim</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h5 class="footer-title">Yardım</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#"><i class="fa-solid fa-truck-fast"></i> Sipariş Takibi</a></li>
+                    <li><a href="#"><i class="fa-solid fa-right-left"></i> İade ve Değişim</a></li>
+                    <li><a href="#"><i class="fa-solid fa-box"></i> Kargo Bilgileri</a></li>
+                    <li><a href="#"><i class="fa-solid fa-credit-card"></i> Ödeme Seçenekleri</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-question"></i> Sıkça Sorulan Sorular</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-3">
+                <h5 class="footer-title">İletişim</h5>
+                <ul class="list-unstyled footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> İstanbul, Türkiye</li>
+                    <li><i class="fa-solid fa-phone"></i> +90 555 123 45 67</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@sikbutik.com</li>
+                </ul>
+                <div class="payment-methods mt-3">
+                    <i class="fa-brands fa-cc-visa fa-2x me-2"></i>
+                    <i class="fa-brands fa-cc-mastercard fa-2x me-2"></i>
+                    <i class="fa-brands fa-cc-paypal fa-2x me-2"></i>
+                    <i class="fa-brands fa-cc-amex fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright mb-0"><i class="fa-regular fa-copyright"></i> 2025 Şık Butik. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="me-3" style="text-decoration: none; color: white;"><i class="fa-solid fa-lock"></i> Gizlilik Politikası</a>
+                    <a href="#" style="text-decoration: none; color: white;"><i class="fa-solid fa-file-contract"></i> Kullanım Koşulları</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+
+ <!-- Bootstrap JS (opsiyonel ama tavsiye edilir) -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js"></script>
+ <script src="sepet.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</nav>
+</body>
+</html>

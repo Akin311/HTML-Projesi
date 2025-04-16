@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- Meta etiketleri -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <title>Butik Deneme</title>
+  </head>
+  <body>
+
+    
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Kayan Yazı -->
+<div class="kayan-yazi-container">
+    <div class="kayan-yazi">
+    🚨 Şık Butik'te Yeni Sezon! Ücretsiz Kargo & Kapıda Ödeme Fırsatı! 🎁
+    </div>
+</div>
+
+<!--Butik Navbar-->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top" style="margin-top: 40px;">
+    <div class="container-fluid justify-content-between px-4">
+      <!-- Logo (Sola yaslı ama boşluklu) -->
+      <div class="d-flex align-items-center ps-lg-3" style="min-width: 150px;">
+        <img src="images/logo.jpg" width="110">
+      </div>
+  
+      <!-- Menü (Ortalanmış) -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav">
+            <!-- KOLEKSİYON -->
+            <li class="nav-item"><a class="nav-link" href="#">KOLEKSİYON</a></li>
+    
+            <!-- TAKIM -->
+            <li class="nav-item dropdown mega-menu position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">TAKIM <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu mega-dropdown w-100 mt-0 py-4 px-5">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h6>ETEKLİ TAKIM</h6>
+                            <img src="images/takim1.webp" alt="Takım 1" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6>PANTALONLU TAKIM</h6>
+                            <img src="images/takim2.webp" alt="Takım 2" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <h6>TRİKO TAKIM</h6>
+                          <img src="images/takim3.webp" alt="Takım 2" class="img-fluid rounded">
+                      </div>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- ELBİSE -->
+            <li class="nav-item"><a class="nav-link" href="#">ELBİSE</a></li>
+    
+            <!-- ALT GİYİM -->
+            <li class="nav-item dropdown mega-menu position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ALT GİYİM <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu mega-dropdown w-100 mt-0 py-4 px-5">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h6>ETEK</h6>
+                            <img src="images/menufoto1.webp" alt="Etek" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6>PANTOLON</h6>
+                            <img src="images/menufoto2.webp" alt="Pantolon" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- ÜST GİYİM -->
+            <li class="nav-item dropdown mega-menu position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ÜST GİYİM <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu mega-dropdown w-100 mt-0 py-4 px-5">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h6>GÖMLEK</h6>
+                            <img src="images/üst1.webp" alt="Gömlek" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6>KAZAK</h6>
+                            <img src="images/üst2.webp" alt="Kazak" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <h6>T-SHIRT</h6>
+                          <img src="images/üst3.webp" alt="T-Shirt" class="img-fluid rounded">
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <h6>TUNİK</h6>
+                        <img src="images/üst4.webp" alt="Tunik" class="img-fluid rounded">
+                    </div>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- DIŞ GİYİM -->
+            <li class="nav-item dropdown mega-menu position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">DIŞ GİYİM <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu mega-dropdown w-100 mt-0 py-4 px-5">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h6>CEKET</h6>
+                            <img src="images/dis1.webp" alt="Ceket" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6>HIRKA</h6>
+                            <img src="images/dis2.webp" alt="Hırka" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <h6>KABAN</h6>
+                          <img src="images/dis3.webp" alt="Kaban" class="img-fluid rounded">
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <h6>YELEK</h6>
+                        <img src="images/dis4.webp" alt="Yelek" class="img-fluid rounded">
+                    </div>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- IMANNOOR COLLECTION -->
+            <li class="nav-item dropdown mega-menu position-static">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">IMANNOOR COLLECTION <i class="fas fa-caret-down"></i></a>
+              <div class="dropdown-menu mega-dropdown w-100 mt-0 py-4 px-5">
+                  <div class="row">
+                      <div class="col-md-3 text-center">
+                          <h6>ŞAL</h6>
+                          <img src="images/sal.webp" alt="Sal" class="img-fluid rounded">
+                      </div>
+                    <div class="col-md-3 text-center">
+                      <h6>EŞARP</h6>
+                      <img src="images/esarp.webp" alt="Esarp" class="img-fluid rounded">
+                  </div>
+                  </div>
+              </div>
+          </li>
+    
+            <!-- İNDİRİM ÜRÜNLERİ -->
+            <li class="nav-item"><a class="nav-link" href="#">İNDİRİM ÜRÜNLERİ</a></li>
+        </ul>
+    </div>
+
+      <!-- Sağ ikonlar (Sağa yaslı ama boşluklu) -->
+      <div class="d-flex align-items-center gap-3 pe-lg-3" style="min-width: 150px; justify-content: flex-end;">
+        <a href="#" class="text-dark"><i class="bi bi-search"></i></a>
+        <a href="sepet.html" class="text-dark icon-badge"><i class="bi bi-bag"></i></a>
+        <a href="#" class="text-dark icon-badge"><i class="bi bi-heart"></i></a>
+        <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
+      </div>
+    </div>
+    
+</nav>
+
+<!--Butik Carousel-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-danger"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-light"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-light"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/foto1.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto2.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/foto1.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+    </button>
+</div>
+  
+<div class="container-fluid my-5 py-4">
+  <div class="row gy-5 justify-content-center">
+    <!-- İkili Takımlar -->
+    <div class="col-lg-3 mx-4">
+      <div class="position-relative p-4 rounded border shadow-sm kategori-card">
+        <img src="images/foto3.webp" class="img-fluid w-100 rounded" style="height: 500px; object-fit: cover;" alt="İkili Takımlar">
+        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4">
+          <a href="#" class="btn btn-dark px-4 py-2 btn-kategori">İKİLİ TAKIMLAR</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Elbise -->
+    <div class="col-lg-3 mx-4">
+      <div class="position-relative p-4 rounded border shadow-sm kategori-card">
+        <img src="images/foto4.webp" class="img-fluid w-100 rounded" style="height: 500px; object-fit: cover;" alt="Elbise">
+        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4">
+          <a href="#" class="btn btn-dark px-4 py-2 btn-kategori">ELBİSE</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Alt Giyim -->
+    <div class="col-lg-3 mx-4">
+      <div class="position-relative p-4 rounded border shadow-sm kategori-card">
+        <img src="images/foto3.webp" class="img-fluid w-100 rounded" style="height: 500px; object-fit: cover;" alt="Alt Giyim">
+        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4">
+          <a href="#" class="btn btn-dark px-4 py-2 btn-kategori">ALT GİYİM</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2 class="fw-bold position-relative d-inline-block mb-4">
+        YENİ GELENLER
+        <span class="position-absolute w-50 border-bottom border-dark" style="left: 25%; bottom: -10px;"></span>
+      </h2>
+    </div>
+  </div>
+</div>
+
+
+ <!-- New Arrivals -->
+ <section class="new-arrivals">
+  <div class="container">
+      
+      <div class="products-grid">
+          <div class="product-card">
+              <div class="product-badge new">Yeni</div>
+              <div class="product-wishlist">
+                  <i class="far fa-heart"></i>
+              </div>
+              <a href="product-detail.html" class="product-image">
+                  <img src="images/foto3.webp" alt="Gümüş Kolye">
+              </a>
+              <div class="product-info">
+                  <div class="product-category">Takı</div>
+                  <h3 class="product-name"><a href="product-detail.html">Gümüş Kolye</a></h3>
+                  <div class="product-price">₺249.90</div>
+                  <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span>(12)</span>
+                  </div>
+              </div>
+              <button class="btn-add-to-cart">
+                  <i class="fas fa-shopping-bag"></i> Sepete Ekle
+              </button>
+          </div>
+          
+          <div class="product-card">
+              <div class="product-badge new">Yeni</div>
+              <div class="product-wishlist">
+                  <i class="far fa-heart"></i>
+              </div>
+              <a href="product-detail.html" class="product-image">
+                  <img src="images/foto3.webp" alt="Slim Fit Pantolon">
+              </a>
+              <div class="product-info">
+                  <div class="product-category">Giyim</div>
+                  <h3 class="product-name"><a href="product-detail.html">Slim Fit Pantolon</a></h3>
+                  <div class="product-price">₺279.90</div>
+                  <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                      <span>(8)</span>
+                  </div>
+              </div>
+              <button class="btn-add-to-cart">
+                  <i class="fas fa-shopping-bag"></i> Sepete Ekle
+              </button>
+          </div>
+          
+          <div class="product-card">
+              <div class="product-badge new">Yeni</div>
+              <div class="product-badge sale">-10%</div>
+              <div class="product-wishlist">
+                  <i class="far fa-heart"></i>
+              </div>
+              <a href="product-detail.html" class="product-image">
+                  <img src="images/foto3.webp" alt="Deri Cüzdan">
+              </a>
+              <div class="product-info">
+                  <div class="product-category">Aksesuar</div>
+                  <h3 class="product-name"><a href="product-detail.html">Deri Cüzdan</a></h3>
+                  <div class="product-price">
+                      <span class="old-price">₺199.90</span>
+                      ₺179.90
+                  </div>
+                  <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span>(15)</span>
+                  </div>
+              </div>
+              <button class="btn-add-to-cart">
+                  <i class="fas fa-shopping-bag"></i> Sepete Ekle
+              </button>
+          </div>
+          
+          <div class="product-card">
+              <div class="product-badge new">Yeni</div>
+              <div class="product-wishlist">
+                  <i class="far fa-heart"></i>
+              </div>
+              <a href="product-detail.html" class="product-image">
+                  <img src="images/foto3.webp" alt="Keten Gömlek">
+              </a>
+              <div class="product-info">
+                  <div class="product-category">Giyim</div>
+                  <h3 class="product-name"><a href="product-detail.html">Keten Gömlek</a></h3>
+                  <div class="product-price">₺199.90</div>
+                  <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span>(9)</span>
+                  </div>
+              </div>
+              <button class="btn-add-to-cart">
+                  <i class="fas fa-shopping-bag"></i> Sepete Ekle
+              </button>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- New Arrivals -->
+<section class="new-arrivals">
+  <div class="container">
+      
+      <div class="products-grid">
+          <div class="product-card">
+              <div class="product-badge new">Yeni</div>
+              <div class="product-wishlist">
+                  <i class="far fa-heart"></i>
+              </div>
+              <a href="product-detail.html" class="product-image">
+                  <img src="images/foto3.webp" alt="Gümüş Kolye">
+              </a>
+              <div class="product-info">
+                  <div class="product-category">Takı</div>
+                  <h3 class="product-name"><a href="product-detail.html">Gümüş Kolye</a></h3>
+                  <div class="product-price">₺249.90</div>
+                  <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span>(12)</span>
+                  </div>
+              </div>
+              <button class="btn-add-to-cart">
+                  <i class="fas fa-shopping-bag"></i> Sepete Ekle
+              </button>
+          </div>
+          
+          <div class="product-card">
+              <div class="product-badge new">Yeni</div>
+              <div class="product-wishlist">
+                  <i class="far fa-heart"></i>
+              </div>
+              <a href="product-detail.html" class="product-image">
+                  <img src="images/foto3.webp" alt="Slim Fit Pantolon">
+              </a>
+              <div class="product-info">
+                  <div class="product-category">Giyim</div>
+                  <h3 class="product-name"><a href="product-detail.html">Slim Fit Pantolon</a></h3>
+                  <div class="product-price">₺279.90</div>
+                  <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                      <span>(8)</span>
+                  </div>
+              </div>
+              <button class="btn-add-to-cart">
+                  <i class="fas fa-shopping-bag"></i> Sepete Ekle
+              </button>
+          </div>
+          
+          <div class="product-card">
+              <div class="product-badge new">Yeni</div>
+              <div class="product-badge sale">-10%</div>
+              <div class="product-wishlist">
+                  <i class="far fa-heart"></i>
+              </div>
+              <a href="product-detail.html" class="product-image">
+                  <img src="images/foto3.webp" alt="Deri Cüzdan">
+              </a>
+              <div class="product-info">
+                  <div class="product-category">Aksesuar</div>
+                  <h3 class="product-name"><a href="product-detail.html">Deri Cüzdan</a></h3>
+                  <div class="product-price">
+                      <span class="old-price">₺199.90</span>
+                      ₺179.90
+                  </div>
+                  <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span>(15)</span>
+                  </div>
+              </div>
+              <button class="btn-add-to-cart">
+                  <i class="fas fa-shopping-bag"></i> Sepete Ekle
+              </button>
+          </div>
+          
+          <div class="product-card">
+              <div class="product-badge new">Yeni</div>
+              <div class="product-wishlist">
+                  <i class="far fa-heart"></i>
+              </div>
+              <a href="product-detail.html" class="product-image">
+                  <img src="images/foto3.webp" alt="Keten Gömlek">
+              </a>
+              <div class="product-info">
+                  <div class="product-category">Giyim</div>
+                  <h3 class="product-name"><a href="product-detail.html">Keten Gömlek</a></h3>
+                  <div class="product-price">₺199.90</div>
+                  <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span>(9)</span>
+                  </div>
+              </div>
+              <button class="btn-add-to-cart">
+                  <i class="fas fa-shopping-bag"></i> Sepete Ekle
+              </button>
+          </div>
+      </div>
+  </div>
+</section>
+
+<div class="live-support-widget" id="liveSupportWidget">
+    <!-- Kapalı durum için buton -->
+    <button class="support-button" id="supportButton">
+      <i class="fa-solid fa-comments"></i>
+      <span>Canlı Destek</span>
+    </button>
+  
+    <!-- Açık durum için chat kutusu -->
+    <div class="support-chat-container" id="supportChatContainer">
+      <!-- Chat Başlık -->
+      <div class="chat-header">
+        <div class="chat-title">
+          <i class="fa-solid fa-headset me-2"></i>
+          <span>Şık Butik Destek</span>
+        </div>
+        <div class="chat-controls">
+          <button class="minimize-button" id="minimizeChat">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <button class="close-button" id="closeChat">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Chat Mesajları -->
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">
+          <div class="message-avatar">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div class="message-content">
+            <div class="message-sender">ŞıkBot</div>
+            <div class="message-text">Merhaba! Şık Butik'e hoş geldiniz. Size nasıl yardımcı olabilirim?</div>
+            <div class="message-time">Şimdi</div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Bot Yazıyor İndikatörü -->
+      <div class="typing-indicator" id="typingIndicator">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+      <!-- Hızlı Cevap Butonları -->
+      <div class="quick-replies" id="quickReplies">
+        <button class="quick-reply-btn">Sipariş Durumu</button>
+        <button class="quick-reply-btn">İade İşlemleri</button>
+        <button class="quick-reply-btn">Beden Rehberi</button>
+        <button class="quick-reply-btn">Ürün Bilgisi</button>
+      </div>
+  
+      <!-- Chat Giriş Alanı -->
+      <div class="chat-input-area">
+        <div class="input-group">
+          <button class="btn-attach" id="attachFile">
+            <i class="fa-solid fa-paperclip"></i>
+          </button>
+          <input type="text" class="chat-input" id="chatInput" placeholder="Mesajınızı yazın...">
+          <button class="btn-send" id="sendMessage">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+        <div class="ai-mode-toggle">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="aiModeToggle" checked>
+            <label class="form-check-label" for="aiModeToggle">ŞıkBot AI Asistan</label>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Chat Footer -->
+      <div class="chat-footer">
+        <small>
+          <i class="fa-solid fa-lock me-1"></i> Konuşmalarınız şifrelenmiştir
+        </small>
+        <div class="operator-status">
+          <span class="status-indicator online"></span>
+          <small>Canlı Operatör: Çevrimiçi</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Mobil menü butonu eklemek için -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button> 
+
+
+  
+<footer class="footer">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h5 class="footer-title">Şık Butik</h5>
+                <p>Türkiye'nin önde gelen moda butiklerinden biri olarak, sizlere en kaliteli ve şık ürünleri sunuyoruz.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h5 class="footer-title">Kategoriler</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#"><i class="fa-solid fa-shirt"></i> Takım</a></li>
+                    <li><a href="#"><i class="fa-solid fa-vest-patches"></i> Elbise</a></li>
+                    <li><a href="#"><i class="fa-solid fa-socks"></i> Alt Giyim</a></li>
+                    <li><a href="#"><i class="fa-solid fa-tshirt"></i> Üst Giyim</a></li>
+                    <li><a href="#"><i class="fa-solid fa-mitten"></i> Dış Giyim</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h5 class="footer-title">Yardım</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#"><i class="fa-solid fa-truck-fast"></i> Sipariş Takibi</a></li>
+                    <li><a href="#"><i class="fa-solid fa-right-left"></i> İade ve Değişim</a></li>
+                    <li><a href="#"><i class="fa-solid fa-box"></i> Kargo Bilgileri</a></li>
+                    <li><a href="#"><i class="fa-solid fa-credit-card"></i> Ödeme Seçenekleri</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-question"></i> Sıkça Sorulan Sorular</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-3">
+                <h5 class="footer-title">İletişim</h5>
+                <ul class="list-unstyled footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> İstanbul, Türkiye</li>
+                    <li><i class="fa-solid fa-phone"></i> +90 555 123 45 67</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@sikbutik.com</li>
+                </ul>
+                <div class="payment-methods mt-3">
+                    <i class="fa-brands fa-cc-visa fa-2x me-2"></i>
+                    <i class="fa-brands fa-cc-mastercard fa-2x me-2"></i>
+                    <i class="fa-brands fa-cc-paypal fa-2x me-2"></i>
+                    <i class="fa-brands fa-cc-amex fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright mb-0"><i class="fa-regular fa-copyright"></i> 2025 Şık Butik. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="me-3" style="text-decoration: none; color: white;"><i class="fa-solid fa-lock"></i> Gizlilik Politikası</a>
+                    <a href="#" style="text-decoration: none; color: white;"><i class="fa-solid fa-file-contract"></i> Kullanım Koşulları</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+      
+      
+      
+
+    <!-- Bootstrap JS (opsiyonel ama tavsiye edilir) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="sepet.js"></script>
+  </body>
+</html>
